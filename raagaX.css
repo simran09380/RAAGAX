@@ -1,0 +1,726 @@
+html {
+    scroll-behavior: smooth;
+}
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    width: 286px;
+    height: 1132px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0) 100%);
+    border-radius: 40px 0px 0px 40px;
+    overflow-y:auto;
+    padding: 30px;
+    z-index: 10;
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #161414;
+    margin: 0;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+
+}
+
+section {
+    margin-top: 50px; /* Add spacing between sections */
+}
+
+
+ 
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo-image {
+    width: 74px;
+    height: 70px;
+    background-image: url('RaagaXLOGO'); /* Replace with actual logo path */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Menu section */
+.menu {
+    margin-bottom: 40px;
+    
+}
+
+.menu h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.menu-item span {
+    font-size: 16px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from .menu-item */
+    display: flex; /* Ensure the icon and text stay together */
+    align-items: center; /* Vertically align within the link */
+}  
+
+.menu-item a:hover span {
+    color: #439cf0; /* Change text color on hover */
+}
+
+ 
+
+.menu-icon {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    flex-shrink:0;
+    margin-right: 10px;
+}
+
+/* Library and Playlists sections */
+.library {
+    margin-bottom: 40px;
+} 
+
+.library h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.library ul {
+    list-style-type: none;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.playlists {
+    margin-bottom: 40px;
+} 
+
+.playlists h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.playlists ul {
+    list-style-type: none;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+
+.nav{
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 60px; /* Height of the navbar */    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding for spacing */
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: background-color 0.3s ease; /* Smooth transition */ 
+}
+ /* Frame 4 container */
+.frame-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 37px;
+
+    position: absolute;
+    width: 220px;
+    height: 48px;
+    left: 311px;
+    top: 59px;
+}
+
+/* MUSIC */
+.music {
+    width: 48px;
+    height: 23px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px; /* identical to box height */
+
+    color: #40CAC2;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Raag */
+.raag {
+    width: 43px;
+    height: 24px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; /* identical to box height */
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* History */
+.history {
+    width: 55px;
+    height: 48px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+
+/* Frame 5 container */
+.frame-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+    gap: 46px;
+
+    position: absolute;
+    width: 340px;
+    height: 46px;
+    left: 685px;
+    top: 47px;
+    background: #202020;
+    border-radius: 15px;
+}
+.frame-5 input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+/* Placeholder text */
+.search-placeholder {
+    width: 178px;
+    height: 24px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #141313;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Search icon */
+.search-icon {
+    width: 30px;
+    height: 30px;
+
+    background: url('search-icon.png') no-repeat center center;
+    background-size: contain;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+ 
+
+/* Frame 17 container */
+.frame-17 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 22px;
+
+    position: absolute;
+    width: 192px;
+    height: 37px;
+    left: 1184px;
+    top: 56px;
+}
+
+ 
+
+/* Settings icon */
+.settings-icon {
+    width: 24px;
+    height: 24px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    background: url('settings-icon.png') no-repeat center center;
+    background-size: contain;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Profile image */
+.profile-image {
+    width: 37px;
+    height: 37px;
+    background: url('download.png') no-repeat center center;
+    background-size: cover;
+    mix-blend-mode: luminosity;
+    border-radius: 50px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+/* Profile text */
+.profile-text {
+    width: 49px;
+    height: 24px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+ 
+  
+/* From Uiverse.io by Praashoo7 */ 
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 150px;
+    perspective: 1000px;
+    color: white;
+    margin-left:25%;
+  }
+  
+  .head {
+    position: absolute;
+    letter-spacing: .2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em;
+  }
+
+ 
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(155, 200, 238, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    box-shadow: rgba(96, 194, 240, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #99c6f0;
+  }
+  
+  .flip-card-back {
+    box-shadow: rgba(71, 231, 231, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #4aaef1;
+    transform: rotateY(180deg);
+  }
+
+  .audio-controls {
+    margin-left:27%;
+    margin-top: 20px; /* Space between flip card and play button */
+}
+
+.control-btn {
+    background-color: #0a0b0c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.control-btn:hover {
+    background-color: #0c9bc7;
+}
+ 
+#Home {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#Home h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ 
+
+/* Group 2 */
+.group-2 {
+    position: relative;
+    width: 100%;
+}
+
+/* Rectangle 2 */
+.rectangle-2 {
+    position: absolute;
+    width: 681px;
+    height:  166px;
+    left: 279px;
+    top: 100%;
+    transform: translate(-1%, 40%); 
+    background: rgba(32, 32, 32, 0.86);
+    border-radius: 32px;
+}
+
+.artist-image {
+    width: 144px;
+    height: 141px;
+    background: url('images (8).jpg') no-repeat center center / cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+}
+
+ 
+/* Rectangle 9 */
+.rectangle-9 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 350px;
+    height: 510px;
+    left: 989px;
+    top: 50%;
+    transform: translate(-6%, -52%); 
+    margin-top:2px;
+    padding-top: 20%;
+    background: rgba(32, 32, 32, 0.86);
+    border: 2px solid #40CAC2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+ /* Hide all sections by default */
+section {
+    display: none;
+    z-index: 1;
+}
+
+/* Show section with the 'show' class */
+section.show {
+    display: block;
+}
+
+/* Specific styling for the Home section */
+#Home {
+    display: block; /* Show Home section by default */
+}
+
+
+/* for artists*/
+/* Initially hide the artists section */
+#artists {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show artists section when it has the 'show' class */
+#artists.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:visible;
+    background-image: url('your-background-image.jpg');
+    background-size: cover; /* Ensure the image covers the container without overflowing */
+    background-position: center; /* Adjust the position of the background */
+}
+
+
+  
+.container .glass {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+    margin-top: 5%;
+}
+  
+.container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+}
+  
+.container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+/* Add styles for the artist photo */
+.artist-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the photo and the name */
+}
+
+.artist-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 40px); /* Leave space at the bottom for the name */
+    object-fit: cover; /* Ensures the image scales and covers the container */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+
+.artist-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff; /* White text for contrast */
+    font-size: 16px; /* Adjust as needed */
+    font-weight: bold; /* Optional */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Optional: for a shadow effect */
+}
+
+
+.container .artist-name {
+    position: absolute;
+    bottom: 10px; /* Adjust spacing from the bottom edge */
+    width: 100%; /* Full width to center text */
+    text-align: center; /* Center the text horizontally */
+    font-size: 1em; /* Adjust font size */
+    color: #fff; /* Text color */
+    background: rgba(0, 0, 0, 0.5); /* Optional background for better readability */
+    padding: 5px 0; /* Add some padding for the text */
+    border-radius: 0 0 10px 10px; /* Match the container's bottom border radius */
+}
+ 
+
+#toggle-artists:hover {
+    background-color: #0056b3;
+}
+.glass ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+}
+.glass ul li {
+    margin: 5px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.glass ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #00f;
+    border-radius: 5px;
+}
+.glass:focus {
+    outline: 2px solid #00f;
+    outline-offset: 2px;
+}
+
+.song-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    background: rgba(240, 222, 222, 0.8); /* Dark semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%; /* Adjust width to fit below artist name */
+    margin: 10px auto; /* Centered horizontally */
+    color: #fff;
+    position: relative; /* Ensure it positions relative to parent */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.song-list.visible {
+    max-height: 500px; /* Enough height to display songs */
+    opacity: 1;
+    box-shadow: 0px 10px 20px rgba(243, 236, 236, 0.5); /* Add shadow for depth */
+    display:block;
+    z-index: 10;
+}
+
+.song-list.hidden {
+    display: none; /* Ensure it's completely hidden by default */
+    max-height: 0;
+    opacity: 0;
+}
+
+.song-list li {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.song-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #00f;
+}
+
+.song-list li.playing {
+    font-weight: bold;
+    color: rgb(94, 236, 247);
+}
+
+
+/* Adjust for responsive design */
+@media (max-width: 768px) {
+    .container .glass {
+        width: 150px;
+        height: 180px;
+    }
+    .artist-name {
+        font-size: 14px;
+    }
+    .song-list {
+        width: 90%;
+    }
+}
+.hidden{
+    display:none;
+}
