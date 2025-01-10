@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raagaX</title>
+    <link rel="stylesheet" href="raagaX.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <div class="sidebar1"></div>
+    <div class="sidebar">
+        <div class="logo-container">
+            <div class="logo-text">RaagaX</div>
+            <div class="logo-image"></div>
+        
+        </div>
+
+        <nav class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li class="menu-item">
+                    <a href="#Home">
+                    <div class="menu-icon"></div>
+                    <span>Home</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#explore">
+                        <div class="menu-icon"></div>
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#album">
+                        <div class="menu-icon"></div>
+                        <span>Albums</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#Artists">
+                        <div class="menu-icon"></div>
+                        <span>Artists</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="library">
+            <h2>Library</h2>
+            <ul>
+                <li class="menu-item">
+                    <a href="#recent">
+                        <div class="menu-icon"></div>
+                        <span>Recent</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#Albums">
+                        <div class="menu-icon"></div>
+                        <span>Albums</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#Downloads">
+                        <div class="menu-icon"></div>
+                        <span>Downloads</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="playlists">
+            <h2>Playlists</h2>
+            <ul>
+                <li class="menu-item">
+                    <a href="#create new playlists">
+                        <div class="menu-icon"></div>
+                        <span>Create New Playlists</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#Classical song">
+                        <div class="menu-icon"></div>
+                        <span>Classical Song</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#Bollywood">
+                        <div class="menu-icon"></div>
+                        <span>Bollywood</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#Favourite">
+                        <div class="menu-icon"></div>
+                        <span>Favourite</span>
+                    </a>
+                </li> 
+                <li class="menu-item">
+                    <a href="#Tollywood">
+                        <div class="menu-icon"></div>
+                        <span>Tollywood</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav"> 
+        <div class="frame-4">
+            <span class="music">MUSIC</span>
+            <span class="raag">Raag</span>
+            <span class="history">History</span>
+        </div>
+
+    
+
+        <div class="frame-5">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type ="text" placeholder="Type your search here"> </span>
+            <!--<div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>-->
+            <div class="vector1"></div>
+        </div>
+
+        <div class="frame-17">
+            <div class="vector2"><i class="fa-regular fa-bell"></i></div>
+            <div class="settings-icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="profile-image"> <i class="fa-regular fa-user"></i> </div>
+            <span class="profile-text">Profile</span>
+        </div>
+    </div>
+
+
+    <section id="Home">
+        <h1>Home</h1>
+        <button id="toggle-artists">Show/Hide Artists</button>
+         
+       
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="head">SONG NAME</p>
+        </div>
+        <div class="flip-card-back">
+            <p>Additional Info</p>
+        </div>
+    </div>
+    </div>
+            
+    <div class="audio-controls">
+        <button id="back-button" class="control-btn">Back</button>
+        <button id="play-button" class="control-btn">Play</button>
+        <button id="next-button" class="control-btn">Next</button>
+    </div>
+
+        <div class="group-2">
+            <!-- Rectangle 2 -->
+            <div class="rectangle-2"></div>
+            
+            <div class="rectangle-9"></div>
+        </div>
+    </section>  
+    
+    <section id="Artists">
+        <h1>Artists</h1>
+        <div class="container">
+            <!-- Artist 1 -->
+            <div class="glass">
+                <div  class="artist-info">
+                    <img class="artist-photo" src="./artists/jagjit_singh/jagjit.jfif" alt="Jagjit Singh">
+                    <audio id="audio-player" src="./artists/jagjit_singh/jgsong1.mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="artist-name" data-artist="Jagjit Singh">Jagjit Singh</div>
+                </div>
+                <ul class="song-list hidden">
+                    <li data-song="huthon se chuu lu" data-artist="Jagjit Singh" data-src="./artists/jagjit_singh/jgsong1.mp3">Song A1</li>
+                    
+                </ul>
+            </div>
+            <!-- Artist 2 -->
+            <div class="glass">
+                <div class="artist-info">
+                     
+                    <div class="artist-name" data-artist="Ankit Tiwari">Ankit Tiwari</div>
+                </div>
+                <ul class="song-list hidden">
+                    <li data-song="teri galliyan" data-artist="ankit tiwari" data-src="./artists/ankit_tiwari/atsong2.mp3">Song B1</li>
+                    
+                </ul>
+            </div>
+            <!-- Artist 3 -->
+            <div class="glass">
+                <div class="artist-info">
+                     
+                    <div class="artist-name" data-artist="Darshan Raval">Darshan Raval</div>
+                </div>
+                <ul class="song-list hidden">
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+
+    <script src="raagaX.js"></script>
+</body>
+</html>
